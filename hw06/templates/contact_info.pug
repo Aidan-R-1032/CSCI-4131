@@ -1,0 +1,9 @@
+tr 
+    td= person.contact_name 
+    td= person.email
+    td= person.meeting
+    td= person.meeting_type
+    td= person.subscribe
+    td
+        button#delete Delete Contact 
+    td#person_id(style="display:none")= person.id

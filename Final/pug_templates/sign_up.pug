@@ -1,0 +1,27 @@
+doctype html 
+html 
+    head
+        meta(charset="utf-8")
+        title Sign Up 
+        link(rel="stylesheet" href="/css/dark_theme.css")
+    body
+        include title_card
+        div.content
+            div.sign
+                p Let's Create an Account For You!
+                if taken
+                    div.taken Username is taken
+                if missing
+                    div.missing Missing one required field
+                form.sign(action="/api/user" method="post" name="sign_up")
+                    span
+                        label(for="username") Username: 
+                        input#username(name="username" type="text" required) 
+                    span
+                        label(for="password") Password: 
+                        input#password(name="password" type="text" required)
+                    div 
+                        input#submit(type="submit" value="Submit" name="submit")
+                div 
+                    p Already have an account? 
+                        a(href="/sign_in") Sign In Here

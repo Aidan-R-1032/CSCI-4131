@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+body {
+    align-self: center;
+    background-color: beige;
+    margin: 0;
+    color: black;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    background-color: mediumspringgreen;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.navElem {
+    color:black;
+    padding:.5rem;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    max-width: 20%;
+    font-size: 2em;
+    background-color: chartreuse;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid forestgreen;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.title-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.title-card > h1 {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.title-card > h2 {
+    flex-grow: 1;
+    font-style: italic;
+}
+
+.vertical-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    width: 100vw;
+}
+
+.text {
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    font-size: 4em;
+}
+
+.vertical-content>.text{
+    background-color: mediumspringgreen;
+    color: black;
+    font-size: 2em;
+    flex-grow: 1;
+    align-items: center;
+    border-radius: 25px;
+}
+
+/* The above is general css used for all pages */
+
+.vertical-content>video{
+    align-self: stretch;
+}
+
+p>em {
+    color: maroon;
+}
+
+p>strong{
+    color:blueviolet;
+}
+.vertical-content>img {
+    width: 75%;
+}
+
+.vertical-content>.text>.list {
+    text-align: center;
+    background-color: chartreuse;
+    border: 1px solid forestgreen;
+    padding:.5rem;
+    flex-grow: 0;
+    margin: auto;
+    bottom: 0;
+    width: 50%;
+    height: 75%;
+    border-radius: 25px;
+}
+.list>ol{
+    display: inline-block;
+  	text-align: left;
+}
+
+#placeholder {
+    text-align: center;
+    background-color: mediumspringgreen;
+    border: 3px solid forestgreen;
+    margin: 10px;
+    padding: 10px;
+    width: 75%;
+    font-size: xx-large;
+    visibility: hidden;
+}
+
+/*  The above is for the main page */
+
+.video {
+    text-align: center;
+    background-color: mediumspringgreen;
+    border: 3px solid forestgreen;
+    border-radius: 25px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.review-container.text{
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100vw;
+    padding: 10%;
+}
+.review {
+    border: 1px solid forestgreen;
+    border-radius: 25px;
+    padding: 1%;
+    margin: 1%;
+    flex-grow: 0; 
+    flex-shrink: 1;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    max-width: 50%;
+}
+.review-body{
+    font-size: larger;
+}
+
+.reviewer-name{
+    text-align: right;
+    font-style: italic;
+}
+
+/* The above is for testimonials */
+
+table {
+    margin: 10px;
+    width: 75%;
+    border-collapse: collapse;
+    font-size: 2em;
+}
+
+tr{
+    background-color: mediumspringgreen;
+    text-align: center;
+}
+th, td {
+    border: 1px solid forestgreen;
+    padding: 10px;
+}
+
+tr:nth-child(odd){
+    background-color: mediumseagreen;
+}
+
+#banner_form{
+    background-color: mediumspringgreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#banner_form>span{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+#banner_form>span>button{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 50%;
+}
+/* The above is for the contactlog */
+
+.text > h1 {
+    text-align: center;
+}

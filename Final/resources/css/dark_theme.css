@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+body {
+    align-self: center;
+    background-color: black;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+}
+div#title_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(21, 21, 126);
+    text-align: center;
+}
+div#title_card>h1 {
+    padding: 20px;
+    color: white;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button.edit{
+    visibility: hidden;
+}
+
+button.delete{
+    visibility: hidden;
+}
+button.like_this{
+    visibility: hidden;
+}
+
+div#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(20, 10, 97);
+}
+.navElem {
+    color:white;
+    padding:.5rem;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    max-width: 20%;
+    font-size: 2em;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.niceButton {
+    color:white;
+    text-align: center;
+    width: 20%;
+    font-size: 1.5em;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    overflow: hidden;
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+}
+div.posts {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    width: 75%;
+}
+div.post_content {
+    word-wrap: break-word;
+}
+div.post {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(46, 47, 47);
+    justify-content: center;
+}
+span#sort{
+    display: flex;
+    background-color: blue;
+    padding: 20px;
+    margin: 5px;
+    gap: 20px;
+}
+div.author_date {
+    font-size: larger;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+div.identities {
+    display: none;
+}
+div.editContent {
+    display: none;
+}
+p.author {
+    align-self: left;
+}
+p.time {
+    align-self: right;
+    color: lightgray
+}
+div.content {
+    justify-content: left;
+}
+p.content {
+    font-size: larger;
+}
+span.like_edit_delete {
+    display: flex;
+    justify-content: space-between;
+}
+div.like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.sign_in {
+    background-color: darkslategrey;
+    color: blue;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#uid {
+    visibility: hidden;
+}
+
+div.sign{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46, 47, 47);
+    text-align: center;
+    border: 2px solid blue;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+}
+form.sign{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+}
+div#new_user_post {
+    text-align: center;
+    font-size: larger;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(46, 47, 47);
+    justify-content: center;
+}
+
+textarea{
+    color: white;
+    background-color: rgb(46, 47, 47);
+    border: 2px solid blue;
+    margin: 10px;
+}
+
+div#post_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

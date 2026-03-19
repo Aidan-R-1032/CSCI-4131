@@ -1,0 +1,29 @@
+doctype html 
+html 
+    head
+        meta(charset="utf-8")
+        title My Contacts
+        link(rel="stylesheet" href="/css/main.css")
+        script(src="/js/main.js")
+        script(src="/js/table.js")
+        script(src="/js/editBanner.js")
+    body 
+        include top_card.pug
+        div.vertical-content
+            div.vertical-content 
+                form#banner_form
+                    label(for="sale_info") Enter Sale 
+                    input#sale_info 
+                    span 
+                        button#change_sale Submit Sale 
+                        button#end_sale End Sale 
+            table 
+                tr 
+                    th Name
+                    th Email 
+                    th Date 
+                    th Type
+                    th Subscription 
+                    th Delete
+                for person in contact_list  
+                    include contact_info.pug

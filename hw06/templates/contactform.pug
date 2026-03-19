@@ -1,0 +1,31 @@
+doctype html 
+html 
+    head
+        meta(charset="utf-8")
+        title Contact Us
+        link(rel="stylesheet" href="/css/main.css")
+        script(src="/js/main.js")
+        script(src="/js/contact.js")
+    body 
+        include top_card.pug 
+        div.vertical-content
+            form.text#scheduler(action="/contact" method="post" name="scheduler")
+                div 
+                    label(for="name") Full Name:
+                    input#name(type="text" name="name" required)
+                div
+                    label(for="user-email") Email: 
+                    input#user-email(type="email" name="user-email" placeholder="name@domain.com" required)
+                div 
+                    label(for="meeting") Appointment Date:
+                    input#meeting(type="date" name="meeting" required)
+                div Meeting Type:
+                    select#meeting_type(name="meeting_type")
+                        option(value="In-Person") In Person 
+                        option(value="Zoom") Zoom 
+                        option(value="Google Meet") Google Meet 
+                div 
+                    label(for="subscribe") Check to subscribe to our mailing list:
+                    input#subscribe(input type="checkbox" name="subscribe")
+                div 
+                    input#submit(type="submit" value="Submit" name="submit")

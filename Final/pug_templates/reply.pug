@@ -1,0 +1,12 @@
+div.reply
+    div.author_date
+        p.author= reply_info.author  
+        p.time= reply_info.post_date
+    div.content
+        p.content= reply_info.content
+    div.like_reply
+        div.comment
+            button#add_reply Comment
+        div.like
+            button#like_this Like 
+            p.like_count= reply_info.like_count

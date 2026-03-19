@@ -1,0 +1,24 @@
+doctype html 
+html 
+    head
+        meta(charset="utf-8")
+        title Sign In 
+        script(src="/js/tokenize.js")
+        link(rel="stylesheet" href="/css/dark_theme.css")
+    body
+        include title_card
+        div.content
+            div.sign
+                p Let's sign in!
+                form.sign(action="/api/auth" method="post" name="sign_in")
+                    span
+                        label(for="username") Username: 
+                        input#username(name="username" type="text" required) 
+                    span
+                        label(for="password") Password: 
+                        input#password(name="password" type="password" required)
+                    div 
+                        button#login Login
+                div 
+                    p Don't have an account? 
+                        a(href="/sign_up") Sign Up Here

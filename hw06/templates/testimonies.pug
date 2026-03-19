@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head
+        meta(charset="utf-8")
+        title Reviews
+        link(rel="stylesheet" href="/css/main.css")
+        script(src="/js/main.js")
+    body
+        include top_card.pug 
+        div.vertical-content
+            div.video
+                h2 How to Survive as a Computer Science Student: 
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/l8QSG4rTnjg?si=QNODOMX8LXGxjVES" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+            div.text.review-container
+                each r in reviews
+                    include review.pug 
+        

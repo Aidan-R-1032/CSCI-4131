@@ -1,0 +1,31 @@
+doctype html 
+html 
+    head
+        meta(charset="utf-8")
+        title Home
+        link(rel="stylesheet" href="/css/dark_theme.css")
+        script(type="module" src="/js/home.js")
+        script(src="/js/remove_token.js")
+        script(type="module" src="/js/sortposts.js")
+        script(type="module" src="/js/newpost.js")
+        script(type="module" src="/js/deletepost.js")
+        script(type="module" src="/js/editpost.js")
+        script(type="module" src="/js/likepost.js")
+    body
+        include top_card
+        div.content
+            div.posts
+                include post_form
+                span#sort
+                    | Order By: 
+                    select#post_ordering(name="post_ordering")
+                        option(value="Newest") Newest
+                        option(value="Likes") Like Count  
+                    button#go_sort Go
+                each post_info in post_list
+                    include post
+            div.pager
+                - backward = Math.max(1, page - 1)
+                a.navElem(href="/?page="+backward) Prev page
+                - forward = Math.min(end, (page + 1))
+                a.navElem(href="/?page="+forward) Next page

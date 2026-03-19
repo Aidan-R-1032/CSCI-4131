@@ -1,0 +1,17 @@
+div.post
+    div.author_date
+        p.author= post_info.author  
+        p.time= post_info.post_date
+    div.identities
+        p.uid= post_info.user_id
+        p.pid= post_info.post_id
+    div.post_content= post_info.content
+    div.editContent
+        textarea.new_post_body(rows='5', cols='50', maxlength=250)= post_info.content
+        button.save.niceButton Save
+    span.like_edit_delete
+        button.edit.niceButton Edit 
+        button.delete.niceButton Delete
+        button.like_this.niceButton Like 
+        | Likes:
+        span.like_count= post_info.like_count
